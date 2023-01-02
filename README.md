@@ -14,6 +14,7 @@ import "slider-time-picker/dist/sliderTimePicker.css";
 
  <TimePicker value="4:30" amOrPm="AM" onChange={onTimeChange}></TimePicker>
  ```
+`###`  use the following css to style the TimePicker
 
 ![My Image](theme.png)
 
