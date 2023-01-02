@@ -5,6 +5,7 @@ npm install slider-time-picker
 import "slider-time-picker/dist/sliderTimePicker.css";
 
 ![My Image](picker.png)
+![My Image](mobile.png)
 
 ```JSX
 import TimePicker from "slider-time-picker";
