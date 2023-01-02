@@ -1,0 +1,47 @@
+$primary-color: #21928c;
+.toggle {
+  border: solid 0.5px black;
+  border-radius: 0.2rem;
+  margin: 0 1.7rem;
+  display: flex;
+
+  input[type="checkbox"] {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+    margin: 0;
+  }
+
+  label {
+    color: white;
+    cursor: pointer;
+    text-indent: 5px;
+    width: 100px;
+    height: 40px;
+    background: #2b2828;
+    display: block;
+    border-radius: 0.1rem;
+    position: relative;
+    span {
+      margin: 0 0.51rem;
+      line-height: 2.2;
+      &.on {
+        color: $primary-color;
+      }
+      &.off {
+        color: #a39b9b;
+      }
+    }
+    &::after {
+      content: "";
+    }
+  }
+  input:checked + label:after {
+    left: calc(100% - 5px);
+    transform: translateX(-100%);
+  }
+
+  label:active:after {
+    width: 130px;
+  }
+}

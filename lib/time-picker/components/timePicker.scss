@@ -1,0 +1,78 @@
+$primary-color: #21928c;
+
+.time {
+  display: flex;
+  align-items: center;
+  width: 286px;
+  border: solid 0.5px black;
+  border-radius: 0.2rem;
+  height: 3.5rem;
+  background: #35343b;
+  margin: 0.1rem;
+  box-shadow: 1px 1px 2px 0px #2c2828;
+  .time-input {
+    input {
+      height: inherit;
+      width: inherit;
+      background: #2b2828;
+      color: #a39b9b;
+      display: flex;
+      box-sizing: border-box;
+      border-radius: 0.1rem;
+      border: 1px solid black;
+      padding: 10px 15px;
+      margin-bottom: 10px;
+      font-size: 2rem;
+
+      &:focus-visible {
+        outline: 2px solid $primary-color;
+        border-radius: 3px;
+      }
+      &.has-error {
+        outline: 2px solid red;
+        border-radius: 3px;
+      }
+    }
+
+    margin: 1rem 0.3rem;
+    position: relative;
+    display: flex;
+    height: 40px;
+    width: 138px;
+    cursor: pointer;
+
+    &::after {
+      content: url("data:image/svg+xml;charset=UTF-8,%3c?xml version='1.0' encoding='UTF-8' standalone='no'?%3e%3c!-- Creator: CorelDRAW X5 --%3e%3csvg xmlns:inkscape='http://www.inkscape.org/namespaces/inkscape' xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns%23' xmlns='http://www.w3.org/2000/svg' xmlns:dc='http://purl.org/dc/elements/1.1/' xmlns:ns1='http://sozi.baierouge.fr' xmlns:cc='http://web.resource.org/cc/' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:sodipodi='http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd' style='fill-rule:evenodd;text-rendering:geometricPrecision;image-rendering:optimizeQuality;clip-rule:evenodd;shape-rendering:geometricPrecision' xml:space='preserve' viewBox='0 0 769 769' %3e%3cdefs %3e%3cstyle type='text/css' %3e .str0 %7bstroke:%2321928c;stroke-width:35.27%7d .str1 %7bstroke:%2321928c;stroke-width:35.27;stroke-linecap:round%7d .fil0 %7bfill:none%7d %3c/style %3e%3c/defs %3e%3cg id='Layer_x0020_1' %3e%3ccircle cy='385' cx='385' r='367' class='fil0 str0' /%3e%3cpolyline points='385 18 385 385 529 251' class='fil0 str1' /%3e%3c/g %3e%3cmetadata %3e%3crdf:RDF %3e%3ccc:Work %3e%3cdc:format %3eimage/svg+xml%3c/dc:format %3e%3cdc:type rdf:resource='http://purl.org/dc/dcmitype/StillImage' /%3e%3ccc:license rdf:resource='http://creativecommons.org/licenses/publicdomain/' /%3e%3cdc:publisher %3e%3ccc:Agent rdf:about='http://openclipart.org/' %3e%3cdc:title %3eOpenclipart%3c/dc:title %3e%3c/cc:Agent %3e%3c/dc:publisher %3e%3c/cc:Work %3e%3ccc:License rdf:about='http://creativecommons.org/licenses/publicdomain/' %3e%3ccc:permits rdf:resource='http://creativecommons.org/ns%23Reproduction' /%3e%3ccc:permits rdf:resource='http://creativecommons.org/ns%23Distribution' /%3e%3ccc:permits rdf:resource='http://creativecommons.org/ns%23DerivativeWorks' /%3e%3c/cc:License %3e%3c/rdf:RDF %3e%3c/metadata %3e%3c/svg %3e ");
+      width: 18px;
+      position: absolute;
+      top: 10.5px;
+      right: 10px;
+    }
+  }
+}
+.error {
+  color: red;
+  height: 20px;
+}
+.time-picker {
+  margin: 2rem;
+  width: 290px;
+  display: flex;
+  justify-content: center;
+
+  height: 25px;
+  align-items: center;
+  flex-direction: column;
+  & > span {
+    min-height: 25px;
+  }
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
