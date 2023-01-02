@@ -1,6 +1,6 @@
 {
   "name": "slider-time-picker",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "time picker with sliders to set hours and minutes",
   "main": "dist/bundle.js",
   "module": "dist/bundle.js",
@@ -16,6 +16,9 @@
     "dist",
     "README.md"
   ],
+  "publishConfig": {
+    "registry": "https://github.com/CandaceAhrends/slider-time-picker"
+  },
   "author": "Candace R Ahrends",
   "license": "MIT",
   "peerDependencies": {
