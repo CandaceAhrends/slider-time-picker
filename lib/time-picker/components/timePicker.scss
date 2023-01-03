@@ -4,12 +4,12 @@ $primary-color: #21928c;
   display: flex;
   align-items: center;
   width: 286px;
-  border: solid 0.5px black;
+
   border-radius: 0.2rem;
   height: 3.5rem;
   background: #35343b;
   margin: 0.1rem;
-  box-shadow: 1px 1px 2px 0px #2c2828;
+
   .time-input {
     input {
       height: inherit;
@@ -19,7 +19,7 @@ $primary-color: #21928c;
       display: flex;
       box-sizing: border-box;
       border-radius: 0.1rem;
-      border: 1px solid black;
+      border: 1px solid transparent;
       padding: 10px 15px;
       margin-bottom: 10px;
       font-size: 2rem;
