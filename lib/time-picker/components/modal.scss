@@ -33,7 +33,7 @@
   z-index: 999999;
   &::after {
     content: "";
-    width: 288px;
+    width: 286px;
     height: 245px;
     background: #35343b;
     display: block;
@@ -41,7 +41,6 @@
     top: 200%;
     left: 50%;
     transform: translate(-50%, -50%);
-    box-shadow: 1px 1px 2px 0px #2c2828;
     z-index: 1;
   }
 }
