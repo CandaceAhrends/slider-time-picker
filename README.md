@@ -1,8 +1,13 @@
 React Slider Time Picker
+### Installation
 
+```sh
 npm install slider-time-picker
-
 import "slider-time-picker/dist/sliderTimePicker.css";
+```
+
+
+
 
 ![My Image](picker.png)
 ![My Image](mobile.png)
