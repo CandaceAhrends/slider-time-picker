@@ -7,7 +7,7 @@ import "slider-time-picker/dist/sliderTimePicker.css";
 ```
 
 
-
+[![slider-time-picker-image](picker.png)](https://github.com/CandaceAhrends/slider-time-picker/blob/main/)
 
 ![My Image](picker.png)
 ![My Image](mobile.png)
