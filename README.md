@@ -6,6 +6,9 @@ npm install slider-time-picker
 import "slider-time-picker/dist/sliderTimePicker.css";
 ```
 
+### DEMO
+
+[code sandbox demo](https://codesandbox.io/s/nostalgic-wildflower-zcsd98?file=/src/App.js)
 
 [![slider-time-picker-image](picker.png)](https://github.com/CandaceAhrends/slider-time-picker/blob/main/)
 
