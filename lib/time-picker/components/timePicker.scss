@@ -1,10 +1,9 @@
-$primary-color: #21928c;
+@import "./styles.scss";
 
 .time {
   display: flex;
   align-items: center;
   width: 286px;
-
   border-radius: 0.2rem;
   height: 3.5rem;
   background: #35343b;
@@ -50,10 +49,7 @@ $primary-color: #21928c;
     }
   }
 }
-.error {
-  color: red;
-  height: 20px;
-}
+
 .time-picker {
   margin: 2rem;
   width: 290px;
@@ -67,12 +63,8 @@ $primary-color: #21928c;
     min-height: 25px;
   }
 }
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
 
-input[type="number"] {
-  -moz-appearance: textfield;
+.error {
+  position: absolute;
+  top: 75px;
 }

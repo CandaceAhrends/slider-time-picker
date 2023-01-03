@@ -1,4 +1,4 @@
-$primary-color: #21928c;
+@import "./styles.scss";
 
 .slider {
   position: relative;
@@ -11,9 +11,4 @@ $primary-color: #21928c;
     background: rgb(35, 33, 33);
     border: solid 2px rgb(35, 33, 33);
   }
-}
-label {
-  color: #999;
-  font-size: 1.3rem;
-  display: flex;
 }
