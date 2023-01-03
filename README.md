@@ -23,7 +23,7 @@ import "slider-time-picker/dist/sliderTimePicker.css";
 
  <TimePicker time="4:30 PM" onChange={onTimeChange}></TimePicker>
  ```
-** Use the following css to style the TimePicker **
+** If you would like to change the styling you can use the following css as an example to alter the style for the TimePicker **
 
 ![My Image](theme.png)
 
