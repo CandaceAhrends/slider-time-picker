@@ -1,4 +1,5 @@
 React Slider Time Picker
+Only dependency is styled-components 
 ### Installation
 
 ```sh
