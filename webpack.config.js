@@ -1,23 +1,55 @@
 const path = require("path");
-var webpack = require('webpack');
-const HtmlWebpackPlugin = require("html-webpack-plugin");
-const  MiniCssExtractPlugin = require("mini-css-extract-plugin")
-const mode = process.env.NODE_ENV === 'production' ? 'production' : 'development'
-const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+var webpack = require("webpack");
+
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const mode =
+  process.env.NODE_ENV === "production" ? "production" : "development";
+
 const config = {
-  entry: "./src/index.js",
+  entry: "./lib/index.js",
   output: {
     path: path.join(__dirname, "/dist"),
-    filename: "bundle.[contenthash].js",
-    clean: true,
+    publicPath: "/",
+    filename: "bundle.js",
+    globalObject: "this",
+    library: {
+      name: "TimePicker",
+      type: "umd",
+    },
   },
-  devtool: mode==='development'?"source-map":false,
+  devtool: mode === "development" ? "source-map" : false,
   mode: mode,
+  resolve: {
+    alias: {
+      react: path.resolve(__dirname, "./node_modules/react"),
+      "react-dom": path.resolve(__dirname, "./node_modules/react-dom"),
+    },
+  },
+  externals: {
+    "styled-components": {
+      commonjs: "styled-components",
+      commonjs2: "styled-components",
+      amd: "styled",
+      root: "styled",
+    },
+    react: {
+      commonjs: "react",
+      commonjs2: "react",
+      amd: "React",
+      root: "React",
+    },
+    "react-dom": {
+      commonjs: "react-dom",
+      commonjs2: "react-dom",
+      amd: "ReactDOM",
+      root: "ReactDOM",
+    },
+  },
   module: {
     rules: [
       {
         test: /\.script.js$/,
-        use: [ 'script-loader' ]
+        use: ["script-loader"],
       },
       {
         test: /\.js$/,
@@ -35,30 +67,24 @@ const config = {
         use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"], //first style-loader at last sass-loader
       },
       {
-        test: /\.(png|jpe?g|gif)$/i,
-        use: [
-          {
-            loader: 'file-loader',
-          },
-        ],
+        test: /\.(png|svg|jpg|gif)$/,
+        type: "asset/resource",
+        use: ["file-loader"],
       },
     ],
   },
   devServer: {
     historyApiFallback: true,
+    allowedHosts: "all",
   },
   plugins: [
-    new HtmlWebpackPlugin({
-      template: "src/index.html",
-    }),
-    new MiniCssExtractPlugin({filename: 'app.css'}),
-    new webpack.HotModuleReplacementPlugin(),
-    new BundleAnalyzerPlugin(),
+    new MiniCssExtractPlugin({ filename: "sliderTimePicker.css" }),
+
     new webpack.DefinePlugin({
-      'process.env': {
-        LOGGING:  mode==='development'?true:false
-      }
-    })
+      "process.env": {
+        LOGGING: mode === "development" ? true : false,
+      },
+    }),
   ],
 };
 
