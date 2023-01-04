@@ -12,10 +12,7 @@
     "build-test": "webpack",
     "prepublish": "rm -rf ./dist && npm run build"
   },
-  "files": [
-    "dist",
-    "README.md"
-  ],
+  "files": ["dist", "README.md"],
   "repository": {
     "type": "git",
     "url": "https://github.com/CandaceAhrends/slider-time-picker.git"
@@ -32,7 +29,6 @@
     "@babel/preset-react": "^7.18.6",
     "babel-loader": "^8.2.5",
     "css-loader": "^6.7.1",
-    "cypress": "^12.3.0",
     "eslint": "^8.31.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-plugin-import": "^2.26.0",
@@ -56,10 +52,5 @@
     "webpack-cli": "^4.10.0",
     "webpack-dev-server": "^4.11.1"
   },
-  "keywords": [
-    "time picker",
-    "sliding time",
-    "picker",
-    ""
-  ]
+  "keywords": ["time picker", "sliding time", "picker", ""]
 }

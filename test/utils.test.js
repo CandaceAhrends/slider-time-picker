@@ -16,15 +16,17 @@ describe("Utils Tests", () => {
 
   test("should detect valid formats", () => {
     let isOk = isTimeFormat("3:30");
-    expect(isOk).toBeFalsy();
+    expect(isOk).toBeTruthy();
 
-    isOk = isTimeFormat("6:08");
+    isOk = isTimeFormat(":08");
     expect(isOk).toBeFalsy();
   });
 
   test("should zeroPadTime a time", () => {
-    let time = zeroPadTime("9:0");
-    expect(time).toEqual("09:00");
+    let time = zeroPadTime("9");
+    expect(time).toEqual("09");
+    time = zeroPadTime("1");
+    expect(time).toEqual("01");
   });
 
   test("should format time", () => {
