@@ -1,30 +1,38 @@
 {
-  "name": "slider-time-picker",
-  "version": "1.0.13",
-  "description": "time picker with sliders to set hours and minutes",
-  "main": "dist/bundle.js",
-  "module": "dist/bundle.js",
+  "name": "chart-study",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "test": "jest",
-    "lint": "eslint",
+    "test": "jest test",
     "dev": "NODE_ENV='development' webpack-dev-server  --hot --open",
     "build": "NODE_ENV='production' webpack --mode production",
-    "build-test": "webpack",
-    "prepublish": "rm -rf ./dist && npm run build"
+    "cypress:open": "cypress open"
   },
-  "files": [
-    "dist",
-    "README.md"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/CandaceAhrends/slider-time-picker.git"
-  },
-  "author": "Candace R Ahrends",
-  "license": "MIT",
-  "peerDependencies": {
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@ant-design/icons": "^4.8.0",
+    "@emotion/react": "^11.10.4",
+    "@emotion/styled": "^11.10.4",
+    "@mui/icons-material": "^5.10.6",
+    "@mui/material": "^5.10.7",
+    "@mui/x-date-pickers": "^5.0.3",
+    "antd": "^5.1.0",
+    "axios": "^0.27.2",
+    "dayjs": "^1.11.6",
+    "express": "^4.18.1",
+    "file-loader": "^6.2.0",
+    "jsdom": "^20.0.1",
+    "multer": "^1.4.5-lts.1",
     "react": "^18.2.0",
-    "styled-components": "^5.3.6"
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.41.0",
+    "react-router-dom": "^6.4.2",
+    "react-spinners": "^0.13.6",
+    "script-loader": "^0.7.2",
+    "styled-components": "^5.3.6",
+    "vue-chart": "file:vue-chart-1.0.0.tgz"
   },
   "devDependencies": {
     "@babel/core": "^7.19.1",
@@ -32,33 +40,14 @@
     "@babel/preset-react": "^7.18.6",
     "babel-loader": "^8.2.5",
     "css-loader": "^6.7.1",
-    "eslint": "^8.31.0",
-    "eslint-config-airbnb": "^19.0.4",
-    "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-jsx-a11y": "^6.6.1",
-    "eslint-plugin-react": "^7.31.11",
-    "eslint-plugin-react-hooks": "^4.6.0",
-    "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.5.0",
-    "jest": "^29.3.1",
     "mini-css-extract-plugin": "^2.7.2",
     "node-sass": "^7.0.3",
-    "prop-types": "^15.8.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
     "sass-loader": "^13.0.2",
-    "script-loader": "^0.7.2",
     "style-loader": "^3.3.1",
-    "styled-components": "^5.3.6",
     "webpack": "^5.74.0",
     "webpack-bundle-analyzer": "^4.7.0",
     "webpack-cli": "^4.10.0",
     "webpack-dev-server": "^4.11.1"
-  },
-  "keywords": [
-    "time picker",
-    "sliding time",
-    "picker",
-    ""
-  ]
+  }
 }
