@@ -11,7 +11,7 @@ import "slider-time-picker/dist/sliderTimePicker.css";
 
 ### DEMO
 
-[code sandbox demo](https://codesandbox.io/s/nostalgic-wildflower-zcsd98?file=/src/App.js)
+[code   demo](https://stackblitz.com/edit/react-ts-ckrgva?file=App.tsx)
 
 [![slider-time-picker-image](picker.png)](https://github.com/CandaceAhrends/slider-time-picker/blob/main/)
 
