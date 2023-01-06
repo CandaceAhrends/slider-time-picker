@@ -13,7 +13,6 @@ import "slider-time-picker/dist/sliderTimePicker.css";
 
 [code   demo](https://stackblitz.com/edit/react-ts-ckrgva?file=App.tsx)
 
-[![slider-time-picker-image](picker.png)](https://github.com/CandaceAhrends/slider-time-picker/blob/main/)
 
  ![desktop](slider.png)
 ![Mobile](mobile.png)
