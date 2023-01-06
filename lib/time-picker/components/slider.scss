@@ -11,4 +11,11 @@
     background: rgb(35, 33, 33);
     border: solid 2px rgb(35, 33, 33);
   }
+  &-move-area {
+    height: 50px;
+    position: absolute;
+    width: 251px;
+    top: -20px;
+    left: -20px;
+  }
 }
