@@ -1,6 +1,6 @@
 {
   "name": "slider-time-picker",
-  "version": "1.0.24",
+  "version": "1.0.25",
   "description": "time picker with sliders to set hours and minutes",
   "main": "dist/bundle.js",
   "module": "dist/bundle.js",
@@ -8,7 +8,7 @@
     "test": "jest",
     "lint": "eslint",
     "dev": "NODE_ENV='development' webpack-dev-server  --hot --open",
-    "build": "NODE_ENV='production' webpack --mode production",
+    "build": "NODE_ENV='production' webpack --config webpack.config.lib.js --mode production",
     "build-test": "webpack",
     "prepublish": "rm -rf ./dist && npm run build"
   },

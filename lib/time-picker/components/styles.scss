@@ -1,7 +1,9 @@
-$primary-color: #30b1aa;
+$primary-color: #3884cf;
+$primary-font-color: #ddd8d8;
+//$primary-color: #30b1aa;
 
 label {
-  color: #999;
+  color: $primary-font-color;
   font-size: 1.3rem;
   display: flex;
 }

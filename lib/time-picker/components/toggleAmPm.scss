@@ -2,7 +2,7 @@
 
 .toggle {
   border-radius: 0.2rem;
-  margin: 0 1.7rem;
+  margin: 0 0.5rem;
   display: flex;
 
   input[type="checkbox"] {
@@ -16,7 +16,7 @@
     color: white;
     cursor: pointer;
     text-indent: 5px;
-    width: 100px;
+    width: 111px;
     height: 40px;
     background: #2b2828;
     display: block;
@@ -29,7 +29,10 @@
         color: $primary-color;
       }
       &.off {
-        color: #a39b9b;
+        color: $primary-font-color;
+      }
+      &:hover {
+        font-size: 1.5rem;
       }
     }
     &::after {
@@ -43,5 +46,13 @@
 
   label:active:after {
     width: 130px;
+  }
+}
+
+.ampm-disabled {
+  label {
+    line-height: 2;
+    color: $primary-color;
+    margin: 1.3rem;
   }
 }

@@ -1,5 +1,4 @@
 node_modules
 src
-webpack.config.src.js
-package.src.json
+webpack.config.js
 .DS_Store

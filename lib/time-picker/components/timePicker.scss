@@ -14,7 +14,7 @@
       height: inherit;
       width: inherit;
       background: #2b2828;
-      color: #a39b9b;
+      color: $primary-font-color;
       display: flex;
       box-sizing: border-box;
       border-radius: 0.1rem;
@@ -39,9 +39,23 @@
     height: 40px;
     width: 138px;
     cursor: pointer;
-
+    &:hover {
+      &::before {
+        content: " ";
+        width: 30px;
+        height: 31px;
+        position: absolute;
+        top: 4px;
+        right: 4.9px;
+        background: #ccc4c4;
+        border-radius: 50%;
+        opacity: 0.1;
+      }
+    }
     &::after {
-      content: url("data:image/svg+xml;charset=UTF-8,%3c?xml version='1.0' encoding='UTF-8' standalone='no'?%3e%3c!-- Creator: CorelDRAW X5 --%3e%3csvg xmlns:inkscape='http://www.inkscape.org/namespaces/inkscape' xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns%23' xmlns='http://www.w3.org/2000/svg' xmlns:dc='http://purl.org/dc/elements/1.1/' xmlns:ns1='http://sozi.baierouge.fr' xmlns:cc='http://web.resource.org/cc/' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:sodipodi='http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd' style='fill-rule:evenodd;text-rendering:geometricPrecision;image-rendering:optimizeQuality;clip-rule:evenodd;shape-rendering:geometricPrecision' xml:space='preserve' viewBox='0 0 769 769' %3e%3cdefs %3e%3cstyle type='text/css' %3e .str0 %7bstroke:%2321928c;stroke-width:35.27%7d .str1 %7bstroke:%2321928c;stroke-width:35.27;stroke-linecap:round%7d .fil0 %7bfill:none%7d %3c/style %3e%3c/defs %3e%3cg id='Layer_x0020_1' %3e%3ccircle cy='385' cx='385' r='367' class='fil0 str0' /%3e%3cpolyline points='385 18 385 385 529 251' class='fil0 str1' /%3e%3c/g %3e%3cmetadata %3e%3crdf:RDF %3e%3ccc:Work %3e%3cdc:format %3eimage/svg+xml%3c/dc:format %3e%3cdc:type rdf:resource='http://purl.org/dc/dcmitype/StillImage' /%3e%3ccc:license rdf:resource='http://creativecommons.org/licenses/publicdomain/' /%3e%3cdc:publisher %3e%3ccc:Agent rdf:about='http://openclipart.org/' %3e%3cdc:title %3eOpenclipart%3c/dc:title %3e%3c/cc:Agent %3e%3c/dc:publisher %3e%3c/cc:Work %3e%3ccc:License rdf:about='http://creativecommons.org/licenses/publicdomain/' %3e%3ccc:permits rdf:resource='http://creativecommons.org/ns%23Reproduction' /%3e%3ccc:permits rdf:resource='http://creativecommons.org/ns%23Distribution' /%3e%3ccc:permits rdf:resource='http://creativecommons.org/ns%23DerivativeWorks' /%3e%3c/cc:License %3e%3c/rdf:RDF %3e%3c/metadata %3e%3c/svg %3e ");
+      //content: url("data:image/svg+xml;charset=UTF-8,%3c?xml version='1.0' encoding='UTF-8' standalone='no'?%3e%3c!-- Creator: CorelDRAW X5 --%3e%3csvg xmlns:inkscape='http://www.inkscape.org/namespaces/inkscape' xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns%23' xmlns='http://www.w3.org/2000/svg' xmlns:dc='http://purl.org/dc/elements/1.1/' xmlns:ns1='http://sozi.baierouge.fr' xmlns:cc='http://web.resource.org/cc/' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:sodipodi='http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd' style='fill-rule:evenodd;text-rendering:geometricPrecision;image-rendering:optimizeQuality;clip-rule:evenodd;shape-rendering:geometricPrecision' xml:space='preserve' viewBox='0 0 769 769' %3e%3cdefs %3e%3cstyle type='text/css' %3e .str0 %7bstroke:%2321928c;stroke-width:35.27%7d .str1 %7bstroke:%2321928c;stroke-width:35.27;stroke-linecap:round%7d .fil0 %7bfill:none%7d %3c/style %3e%3c/defs %3e%3cg id='Layer_x0020_1' %3e%3ccircle cy='385' cx='385' r='367' class='fil0 str0' /%3e%3cpolyline points='385 18 385 385 529 251' class='fil0 str1' /%3e%3c/g %3e%3cmetadata %3e%3crdf:RDF %3e%3ccc:Work %3e%3cdc:format %3eimage/svg+xml%3c/dc:format %3e%3cdc:type rdf:resource='http://purl.org/dc/dcmitype/StillImage' /%3e%3ccc:license rdf:resource='http://creativecommons.org/licenses/publicdomain/' /%3e%3cdc:publisher %3e%3ccc:Agent rdf:about='http://openclipart.org/' %3e%3cdc:title %3eOpenclipart%3c/dc:title %3e%3c/cc:Agent %3e%3c/dc:publisher %3e%3c/cc:Work %3e%3ccc:License rdf:about='http://creativecommons.org/licenses/publicdomain/' %3e%3ccc:permits rdf:resource='http://creativecommons.org/ns%23Reproduction' /%3e%3ccc:permits rdf:resource='http://creativecommons.org/ns%23Distribution' /%3e%3ccc:permits rdf:resource='http://creativecommons.org/ns%23DerivativeWorks' /%3e%3c/cc:License %3e%3c/rdf:RDF %3e%3c/metadata %3e%3c/svg %3e ");
+      //content: url("data:image/svg+xml;charset=UTF-8,%3c?xml version='1.0' encoding='UTF-8' standalone='no'?%3e%3c!-- Creator: CorelDRAW X5 --%3e%3csvg xmlns:inkscape='http://www.inkscape.org/namespaces/inkscape' xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns%23' xmlns='http://www.w3.org/2000/svg' xmlns:dc='http://purl.org/dc/elements/1.1/' xmlns:ns1='http://sozi.baierouge.fr' xmlns:cc='http://web.resource.org/cc/' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:sodipodi='http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd' style='fill-rule:evenodd;text-rendering:geometricPrecision;image-rendering:optimizeQuality;clip-rule:evenodd;shape-rendering:geometricPrecision' xml:space='preserve' viewBox='0 0 769 769' %3e%3cdefs %3e%3cstyle type='text/css' %3e .str0 %7bstroke:%233884cf;stroke-width:35.27%7d .str1 %7bstroke:%233884cf;stroke-width:35.27;stroke-linecap:round%7d .fil0 %7bfill:none%7d %3c/style %3e%3c/defs %3e%3cg id='Layer_x0020_1' %3e%3ccircle cy='385' cx='385' r='367' class='fil0 str0' /%3e%3cpolyline points='385 18 385 385 529 251' class='fil0 str1' /%3e%3c/g %3e%3cmetadata %3e%3crdf:RDF %3e%3ccc:Work %3e%3cdc:format %3eimage/svg+xml%3c/dc:format %3e%3cdc:type rdf:resource='http://purl.org/dc/dcmitype/StillImage' /%3e%3ccc:license rdf:resource='http://creativecommons.org/licenses/publicdomain/' /%3e%3cdc:publisher %3e%3ccc:Agent rdf:about='http://openclipart.org/' %3e%3cdc:title %3eOpenclipart%3c/dc:title %3e%3c/cc:Agent %3e%3c/dc:publisher %3e%3c/cc:Work %3e%3ccc:License rdf:about='http://creativecommons.org/licenses/publicdomain/' %3e%3ccc:permits rdf:resource='http://creativecommons.org/ns%23Reproduction' /%3e%3ccc:permits rdf:resource='http://creativecommons.org/ns%23Distribution' /%3e%3ccc:permits rdf:resource='http://creativecommons.org/ns%23DerivativeWorks' /%3e%3c/cc:License %3e%3c/rdf:RDF %3e%3c/metadata %3e%3c/svg %3e ");
+      content: url("data:image/svg+xml;charset=UTF-8,%3c?xml version='1.0' encoding='UTF-8' standalone='no'?%3e%3c!-- Creator: CorelDRAW X5 --%3e%3csvg xmlns:inkscape='http://www.inkscape.org/namespaces/inkscape' xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns%23' xmlns='http://www.w3.org/2000/svg' xmlns:dc='http://purl.org/dc/elements/1.1/' xmlns:ns1='http://sozi.baierouge.fr' xmlns:cc='http://web.resource.org/cc/' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:sodipodi='http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd' style='fill-rule:evenodd;text-rendering:geometricPrecision;image-rendering:optimizeQuality;clip-rule:evenodd;shape-rendering:geometricPrecision' xml:space='preserve' viewBox='0 0 769 769' %3e%3cdefs %3e%3cstyle type='text/css' %3e .str0 %7bstroke:%233884cf;stroke-width:65.27%7d .str1 %7bstroke:%233884cf;stroke-width:65.27;stroke-linecap:round%7d .fil0 %7bfill:none%7d %3c/style %3e%3c/defs %3e%3cg id='Layer_x0020_1' %3e%3ccircle cy='385' cx='385' r='367' class='fil0 str0' /%3e%3cpolyline points='385 18 385 385 529 251' class='fil0 str1' /%3e%3c/g %3e%3cmetadata %3e%3crdf:RDF %3e%3ccc:Work %3e%3cdc:format %3eimage/svg+xml%3c/dc:format %3e%3cdc:type rdf:resource='http://purl.org/dc/dcmitype/StillImage' /%3e%3ccc:license rdf:resource='http://creativecommons.org/licenses/publicdomain/' /%3e%3cdc:publisher %3e%3ccc:Agent rdf:about='http://openclipart.org/' %3e%3cdc:title %3eOpenclipart%3c/dc:title %3e%3c/cc:Agent %3e%3c/dc:publisher %3e%3c/cc:Work %3e%3ccc:License rdf:about='http://creativecommons.org/licenses/publicdomain/' %3e%3ccc:permits rdf:resource='http://creativecommons.org/ns%23Reproduction' /%3e%3ccc:permits rdf:resource='http://creativecommons.org/ns%23Distribution' /%3e%3ccc:permits rdf:resource='http://creativecommons.org/ns%23DerivativeWorks' /%3e%3c/cc:License %3e%3c/rdf:RDF %3e%3c/metadata %3e%3c/svg %3e ");
       width: 18px;
       position: absolute;
       top: 10.5px;
@@ -55,7 +69,10 @@
   width: 290px;
   display: flex;
   justify-content: center;
-
+  .disabled {
+    width: 285px;
+    opacity: 0.5;
+  }
   height: 25px;
   align-items: center;
   flex-direction: column;
@@ -67,4 +84,29 @@
 .error {
   position: absolute;
   top: 75px;
+}
+
+.disabled {
+  background: black;
+  input[type="text"]:disabled {
+    background-color: black;
+  }
+
+  &::before {
+    content: "before";
+    position: absolute;
+    width: 104px;
+    height: 50px;
+    background: black;
+  }
+  &::after {
+    content: "";
+    width: 168px;
+    background: black;
+
+    display: block;
+    position: absolute;
+    opacity: 2.4;
+    left: 152px;
+  }
 }
