@@ -23,7 +23,23 @@ import "slider-time-picker/dist/sliderTimePicker.css";
 
 ...
 
- <TimePicker time="4:30 PM" onChange={onTimeChange}></TimePicker>
+  <TimePicker
+        time={time}
+        onChange={onTimeChange}
+        disabled={false}
+      ></TimePicker>
+      <label>Disabled</label>
+      <TimePicker
+        time={time}
+        onChange={onTimeChange}
+        disabled={true}
+      ></TimePicker>
+        <p>Manual input disabled</p>
+      <TimePicker
+        time={time}
+        onChange={onTimeChange}
+        disableTimeManualEntry={true}
+      ></TimePicker>
  ```
 ** If you would like to change the styling you can use the following css as an example to alter the style for the TimePicker **
 
