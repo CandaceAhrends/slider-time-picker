@@ -15,8 +15,8 @@ import "slider-time-picker/dist/sliderTimePicker.css";
 
 [![slider-time-picker-image](picker.png)](https://github.com/CandaceAhrends/slider-time-picker/blob/main/)
 
- 
-![My Image](mobile.png)
+ ![desktop](slider.png)
+![Mobile](mobile.png)
 
 ```JSX
 import TimePicker from "slider-time-picker";
