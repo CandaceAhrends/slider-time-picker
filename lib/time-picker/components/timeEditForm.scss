@@ -2,10 +2,11 @@
 
 .edit-form {
   min-width: 238px;
+  margin-top: 0.8rem;
   .accept-time {
     display: flex;
     justify-content: center;
-    margin: 1rem 0 1.1rem 0;
+    margin: 2.5rem 0 1rem 0;
     button {
       background: $primary-color;
       cursor: pointer;
