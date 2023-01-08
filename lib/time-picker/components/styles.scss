@@ -7,6 +7,14 @@ label {
   font-size: 1.3rem;
   display: flex;
 }
+input {
+  background: #2b2828;
+  color: $primary-font-color;
+  box-sizing: border-box;
+  border-radius: 0.1rem;
+  border: 1px solid transparent;
+  padding: 10px 15px;
+}
 .error {
   color: red;
   height: 20px;
