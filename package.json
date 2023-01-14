@@ -56,9 +56,12 @@
     "webpack-dev-server": "^4.11.1"
   },
   "keywords": [
-    "time picker",
+    "react",
+    "react time picker",
     "sliding time",
     "picker",
-    ""
+    "slider",
+    "time slider",
+    "minimal"
   ]
 }
