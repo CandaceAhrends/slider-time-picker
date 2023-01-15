@@ -15,16 +15,16 @@
   label {
     color: white;
     cursor: pointer;
-    text-indent: 5px;
-    width: 111px;
-    height: 40px;
+    text-indent: 13px;
+    width: 125px;
+    height: 50px;
     background: #2b2828;
     display: block;
     border-radius: 0.1rem;
     position: relative;
     span {
       margin: 0 0.51rem;
-      line-height: 2.5rem;
+      line-height: 3rem;
       &.on {
         color: $primary-color;
       }

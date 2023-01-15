@@ -20,6 +20,12 @@
     border-radius: 0.2rem;
     box-sizing: border-box;
     z-index: 999;
+    border: solid 0.1px #4f4b4b;
+    border-top: solid black;
+    &:hover {
+      border: solid 0.1px white;
+      border-top: solid black;
+    }
   }
 }
 .show-modal {
