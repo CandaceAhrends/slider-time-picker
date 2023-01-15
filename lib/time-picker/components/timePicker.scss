@@ -6,9 +6,13 @@
   width: 286px;
   box-sizing: content-box;
   height: 3.5rem;
-  background: #35343b;
+  background: rgb(59, 58, 58);
   margin: 0.1rem;
-
+  border: solid 0.1px #4f4b4b;
+  border-radius: 0.2em;
+  &:hover {
+    border: solid 0.1px white;
+  }
   .time-input {
     input {
       height: inherit;
