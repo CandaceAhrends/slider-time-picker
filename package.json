@@ -1,6 +1,6 @@
 {
   "name": "slider-time-picker",
-  "version": "1.0.49",
+  "version": "1.0.50",
   "description": "time picker with sliders to set hours and minutes",
   "main": "dist/bundle.js",
   "module": "dist/bundle.js",
