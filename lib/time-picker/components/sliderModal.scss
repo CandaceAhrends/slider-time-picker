@@ -21,7 +21,6 @@
     box-sizing: border-box;
     z-index: 999;
     border: solid 1px #35343b;
-    border-top: solid black;
   }
 }
 .show-modal {
@@ -37,15 +36,25 @@
     content: "";
 
     width: 0;
-    height: 61px;
+    height: 69px;
     display: block;
     position: absolute;
-    top: -191px;
+    top: -192px;
     right: -144px;
-    border: solid 1px #35343b;
+    border: solid 3px #35343b;
     border-top: none;
     border-left: none;
     border-bottom: none;
+  }
+  &::before {
+    content: "";
+    width: 287px;
+    height: 0;
+    display: block;
+    position: absolute;
+    top: -212px;
+    right: -142px;
+    border-bottom: solid 5px #35343b;
   }
 }
 .outline {
@@ -70,7 +79,7 @@
   &::before {
     content: "";
     color: white;
-    border: solid 1px #35343b;
+    border: solid 3px #35343b;
     width: 20px;
     height: 98px;
     display: block;
