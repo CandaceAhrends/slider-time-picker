@@ -24,13 +24,14 @@
       margin: 0 0.51rem;
       line-height: 3rem;
       &.on {
-        color: $primary-color;
-      }
-      &.off {
         color: $primary-font-color;
       }
+      &.off {
+        color: #8a8585;
+        font-size: 1.2rem;
+      }
       &:hover {
-        font-size: 1.5rem;
+        font-size: 1.7rem;
       }
     }
     &::after {
