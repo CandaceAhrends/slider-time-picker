@@ -20,7 +20,7 @@
     border-radius: 0.2rem;
     box-sizing: border-box;
     z-index: 999;
-    border: solid 0.1px white;
+    border: solid 1px #35343b;
     border-top: solid black;
   }
 }
@@ -35,14 +35,14 @@
   z-index: 999999;
   &::after {
     content: "";
-    border-radius: 1px;
+
     width: 0;
     height: 61px;
     display: block;
     position: absolute;
     top: -191px;
     right: -144px;
-    border: solid 0.1px white;
+    border: solid 1px #35343b;
     border-top: none;
     border-left: none;
     border-bottom: none;
@@ -55,7 +55,7 @@
   &::after {
     content: "";
     color: white;
-    border: solid 0.1px white;
+    border: solid 3px #35343b;
 
     width: 288px;
     height: 0;
@@ -70,7 +70,7 @@
   &::before {
     content: "";
     color: white;
-    border: solid 0.1px white;
+    border: solid 1px #35343b;
     width: 20px;
     height: 98px;
     display: block;
