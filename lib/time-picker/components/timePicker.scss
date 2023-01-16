@@ -6,9 +6,9 @@
   width: 286px;
   box-sizing: content-box;
   height: 3.5rem;
-  background: #111010;
+  background: $background-color;
   margin: 0.1rem;
-  border: solid 0.1px #4f4b4b;
+  border: solid 0.1px $background-color;
   border-radius: 0.2em;
   &:hover {
     border: solid 0.1px white;
@@ -23,11 +23,6 @@
 
       &:focus-visible {
         outline: none;
-        // border-radius: 3px;
-      }
-      &.has-error {
-        // outline: 2px solid red;
-        //  border-radius: 3px;
       }
     }
 
