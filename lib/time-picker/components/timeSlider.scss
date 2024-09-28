@@ -3,6 +3,8 @@
 .edit-form {
   min-width: 240px;
   margin-top: 0.8rem;
+  opacity: 0.1;
+  transition: opacity 4s ease;
   .accept-time {
     display: flex;
     justify-content: center;

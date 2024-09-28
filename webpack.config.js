@@ -1,23 +1,25 @@
 const path = require("path");
-var webpack = require('webpack');
+var webpack = require("webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const  MiniCssExtractPlugin = require("mini-css-extract-plugin")
-const mode = process.env.NODE_ENV === 'production' ? 'production' : 'development'
-const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const mode =
+  process.env.NODE_ENV === "production" ? "production" : "development";
+const BundleAnalyzerPlugin =
+  require("webpack-bundle-analyzer").BundleAnalyzerPlugin;
 const config = {
   entry: "./src/index.js",
   output: {
-    path: path.join(__dirname, "/dist"),
+    path: path.join(__dirname, "/dist-dev"),
     filename: "bundle.[contenthash].js",
     clean: true,
   },
-  devtool: mode==='development'?"source-map":false,
+  devtool: mode === "development" ? "source-map" : false,
   mode: mode,
   module: {
     rules: [
       {
         test: /\.script.js$/,
-        use: [ 'script-loader' ]
+        use: ["script-loader"],
       },
       {
         test: /\.js$/,
@@ -38,7 +40,7 @@ const config = {
         test: /\.(png|jpe?g|gif)$/i,
         use: [
           {
-            loader: 'file-loader',
+            loader: "file-loader",
           },
         ],
       },
@@ -51,14 +53,15 @@ const config = {
     new HtmlWebpackPlugin({
       template: "src/index.html",
     }),
-    new MiniCssExtractPlugin({filename: 'app.css'}),
+    new MiniCssExtractPlugin({ filename: "app.css" }),
     new webpack.HotModuleReplacementPlugin(),
-    new BundleAnalyzerPlugin(),
+    //  new BundleAnalyzerPlugin(),
     new webpack.DefinePlugin({
-      'process.env': {
-        LOGGING:  mode==='development'?true:false
-      }
-    })
+      hash: true,
+      "process.env": {
+        LOGGING: mode === "development" ? true : false,
+      },
+    }),
   ],
 };
 

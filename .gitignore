@@ -2,3 +2,5 @@ node_modules
 src
 webpack.config.js
 .DS_Store
+slider-time-picker-1.0.63.tgz
+dist/bundle.js
