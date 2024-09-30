@@ -48,7 +48,7 @@ import "slider-time-picker/dist/sliderTimePicker.css";
    <TimePicker
      time={time}
      onChange={onTimeChange}
-     disableTimeManualEntry={true}
+     allowTextEdit={true}
    ></TimePicker>
 
 
