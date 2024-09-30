@@ -1,7 +1,8 @@
 import React from "react";
-//import TimePicker from "../lib/time-picker/components/TimePicker";
-import TimePicker from "slider-time-picker";
-import "slider-time-picker/dist/sliderTimePicker.css";
+import "./app.scss";
+import TimePicker from "../lib/time-picker/components/TimePicker";
+//import TimePicker from "slider-time-picker";
+//import "slider-time-picker/dist/sliderTimePicker.css";
 
 function App() {
   const [testOutput, setTestOutput] = React.useState("initial");
@@ -11,8 +12,6 @@ function App() {
   };
   return (
     <div className="App">
-      {/* <TimePicker onChange={onChange}></TimePicker> */}
-
       <div
         style={{
           margin: "3rem",

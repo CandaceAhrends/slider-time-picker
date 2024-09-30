@@ -10,9 +10,7 @@
   margin: 0.1rem;
   border: solid 0.1px $background-color;
   border-radius: 0.2em;
-  &:hover {
-    border: solid 0.1px white;
-  }
+
   .time-input {
     input {
       height: inherit;

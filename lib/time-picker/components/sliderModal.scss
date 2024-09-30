@@ -17,7 +17,6 @@
     padding: 1rem 1.5rem;
     border-radius: 0.2rem;
     box-sizing: border-box;
-    transition: height 0.2s ease-out;
   }
 }
 .show-modal {
@@ -28,19 +27,6 @@
   }
   .edit-form {
     opacity: 1;
-  }
-  &::after {
-    content: "";
-    width: 0;
-    height: 69px;
-    display: block;
-    position: absolute;
-    top: -192px;
-    right: -145px;
-    border: solid 6px #333131;
-    border-top: none;
-    border-left: none;
-    border-bottom: none;
   }
 }
 .outline {
@@ -53,16 +39,6 @@
     width: 10px;
     background-color: $background-color;
     border-radius: 0.2rem;
-  }
-  &::after {
-    position: absolute;
-    left: -7px;
-    top: -3px;
-    content: "";
-    height: 323px;
-    width: 10px;
-    border-radius: 0.2rem;
-    background-color: $background-color;
   }
 }
 
