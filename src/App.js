@@ -1,8 +1,8 @@
 import React from "react";
 import "./app.scss";
-import TimePicker from "../lib/time-picker/components/TimePicker";
-//import TimePicker from "slider-time-picker";
-//import "slider-time-picker/dist/sliderTimePicker.css";
+//import TimePicker from "../lib/time-picker/components/TimePicker";
+import TimePicker from "slider-time-picker";
+import "slider-time-picker/dist/sliderTimePicker.css";
 
 function App() {
   const [testOutput, setTestOutput] = React.useState("initial");
@@ -14,7 +14,7 @@ function App() {
     <div className="App">
       <div
         style={{
-          margin: "3rem",
+          margin: "10rem",
           display: "flex",
           alignItems: "center",
           padding: "5rem",
