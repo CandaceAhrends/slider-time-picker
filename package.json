@@ -1,6 +1,6 @@
 {
   "name": "slider-time-picker",
-  "version": "1.0.68",
+  "version": "1.0.69",
   "description": "time picker with sliders to set hours and minutes",
   "main": "dist/bundle.js",
   "module": "dist/bundle.js",
@@ -9,6 +9,7 @@
     "lint": "eslint",
     "start": "NODE_ENV='test' webpack-dev-server --config webpack.config.js",
     "dev": "NODE_ENV='development' webpack-dev-server  --hot --open",
+    "clean": "rm -rf ./dist",
     "build": "NODE_ENV='production' webpack --config webpack.config.lib.js --mode production",
     "build-test": "webpack",
     "prepublish": "rm -rf ./dist && npm run build"
@@ -24,6 +25,9 @@
   "author": "Candace R Ahrends",
   "license": "MIT",
   "peerDependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.6.0",
+    "@fortawesome/free-solid-svg-icons": "^6.6.0",
+    "@fortawesome/react-fontawesome": "^0.2.2",
     "react": "^18.2.0",
     "styled-components": "^5.3.6"
   },
@@ -65,7 +69,11 @@
     "minimal"
   ],
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.6.0",
+    "@fortawesome/free-solid-svg-icons": "^6.6.0",
+    "@fortawesome/react-fontawesome": "^0.2.2",
     "latest-version": "^9.0.0",
-    "node-sass": "^9.0.0"
+    "node-sass": "^9.0.0",
+    "slider-time-picker": "file:slider-time-picker-1.0.68.tgz"
   }
 }

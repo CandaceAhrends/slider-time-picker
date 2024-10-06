@@ -24,7 +24,7 @@
       margin: 0 0.51rem;
       line-height: 3rem;
       &.on {
-        color: $primary-font-color;
+        color: var(--primary-font-color);
       }
       &.off {
         color: #8a8585;
@@ -51,7 +51,7 @@
 .ampm-disabled {
   label {
     line-height: 2;
-    color: $primary-color;
+    color: var(--primary-color);
     margin: 1.3rem;
   }
 }

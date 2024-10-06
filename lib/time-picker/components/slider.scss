@@ -8,8 +8,8 @@
     position: relative;
     height: 1px;
     border-radius: 4px;
-    background: rgb(35, 33, 33);
-    border: solid 2px rgb(35, 33, 33);
+    background: var(--slider-track-color);
+    border: solid 2px var(--slider-track-color);
   }
   &-move-area {
     height: 50px;
