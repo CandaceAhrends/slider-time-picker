@@ -1,8 +1,5 @@
-@import "./styles.scss";
-
 .toggle {
   border-radius: 0.2rem;
-  margin: 0 0.5rem;
   display: flex;
 
   input[type="checkbox"] {
@@ -53,12 +50,5 @@
     line-height: 2;
     color: var(--primary-color);
     margin: 1.3rem;
-  }
-}
-@media only screen and (max-width: 600px) {
-  .toggle {
-    label {
-      text-indent: -15px;
-    }
   }
 }

@@ -34,8 +34,7 @@ const colors = {
   "primary-color": "black",
   "primary-font-color": "pink",
   "background-color": "#1e2528",
-  "slider-track-color": "red",
-  "time-input-background-color": "green",
+  "slider-track-color": "red"
 };
 
 ...
