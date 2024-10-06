@@ -18,16 +18,25 @@ import "slider-time-picker/dist/sliderTimePicker.css";
 
 ### Props
 
-| Prop          | Type      | Description                 |
-| ------------- | --------- | --------------------------- |
-| time          | string    | 07:00 AM                    |
-| disabled      | boolean   | disables all actions        |
-| allowTextEdit | boolean   | allows time edit manually   |
-| ref           | React ref | allows access to the picker |
+| Prop          | Type      | Description                  |
+| ------------- | --------- | ---------------------------- |
+| time          | string    | 07:00 AM                     |
+| disabled      | boolean   | disables all actions         |
+| allowTextEdit | boolean   | allows time edit manually    |
+| ref           | React ref | allows access to the picker  |
+| colors        | object    | set colors for the component |
 
 ```JSX
 import TimePicker from "slider-time-picker";
 import "slider-time-picker/dist/sliderTimePicker.css";
+
+const colors = {
+  "primary-color": "black",
+  "primary-font-color": "pink",
+  "background-color": "#1e2528",
+  "slider-track-color": "red",
+  "time-input-background-color": "green",
+};
 
 ...
 
